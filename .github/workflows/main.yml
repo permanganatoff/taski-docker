@@ -135,7 +135,7 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           source: "docker-compose.production.yml"
           target: "taski"
-      - name: Execute remote SSH commands to deploy
+      - name: Execute remote ssh commands to deploy
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
